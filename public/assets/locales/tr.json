@@ -1,0 +1,9 @@
+{
+  "errors": {
+    "default": "Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin.",
+    "userNotFound": "Kullanıcı bulunamadı."
+  },
+  "header": {
+    "home": "Anasayfa"
+  }
+}
