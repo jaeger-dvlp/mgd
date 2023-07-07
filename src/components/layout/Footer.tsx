@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { BsInstagram } from 'react-icons/bs';
 import Logo from '@/public/assets/img/beyond.png';
-import { FooterSocialLink } from '@/types/footer.types';
+import { FooterSocialLink } from '@/types/boilerplate.types';
 
 function Footer(): JSX.Element {
   const FooterSocialLinks: FooterSocialLink[] = [
