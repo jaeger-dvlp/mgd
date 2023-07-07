@@ -6,12 +6,12 @@ import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 
 import Logo from '@/public/assets/img/beyond.png';
 import {
-  HeaderLink,
   MobileMenuProps,
-  HeaderLinkClassName,
-} from '@/types/header.types';
+  NavbarClass,
+  NavbarLink,
+} from '@/types/boilerplate.types';
 
-const ClassNames: HeaderLinkClassName = {
+const ClassNames: NavbarClass = {
   desktop: 'text-black',
   mobile: 'text-white',
 };
@@ -34,7 +34,7 @@ export default function Header(): JSX.Element {
   const { formatMessage: t } = useIntl();
   const [mobileMenu, setMobileMenu] = React.useState<boolean>(false);
 
-  const HeaderLinks: HeaderLink[] = [
+  const HeaderLinks: NavbarLink[] = [
     {
       id: 0,
       name: 'header.home',
