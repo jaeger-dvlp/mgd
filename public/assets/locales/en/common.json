@@ -3,7 +3,22 @@
     "default": "Something went wrong. Please try again later.",
     "userNotFound": "User not found."
   },
-  "header": {
-    "home": "Home"
+  "navbar": {
+    "home": "HOME",
+    "our-products": {
+      "title": "OUR PRODUCTS",
+      "sub": {
+        "alloy-aluminum-innots": "ALLOY ALUMINUM INNOTS",
+        "pure-aluminum-innots": "PURE ALUMINUM INNOTS",
+        "aluminum-scrap-purchase": "ALUMINUM SCRAP PURCHASE",
+        "raw-materials": "RAW MATERIALS",
+        "catalog": "CATALOG"
+      }
+    },
+    "catalog": "CATALOG",
+    "mcook": "MCOOK",
+    "our-documents": "OUR DOCUMENTS",
+    "about-us": "ABOUT US",
+    "contact-us": "CONTACT"
   }
 }

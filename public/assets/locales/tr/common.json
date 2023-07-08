@@ -3,7 +3,22 @@
     "default": "Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin.",
     "userNotFound": "Kullanıcı bulunamadı."
   },
-  "header": {
-    "home": "Anasayfa"
+  "navbar": {
+    "home": "ANASAYfA",
+    "our-products": {
+      "title": "ÜRÜNLERİMİZ",
+      "sub": {
+        "alloy-aluminum-innots": "ALAŞIMLI ALÜMİNYUM KÜLÇE",
+        "pure-aluminum-innots": "SAF ALÜMİNYUM KÜLÇE",
+        "aluminum-scrap-purchase": "ALÜMİNYUM HURDA ALIMI",
+        "raw-materials": "HAMMADDELER",
+        "catalog": "KATALOG"
+      }
+    },
+    "catalog": "KATALOG",
+    "mcook": "MCOOK",
+    "our-documents": "BELGELERİMİZ",
+    "about-us": "HAKKIMIZDA",
+    "contact-us": "İLETİŞİM"
   }
 }
