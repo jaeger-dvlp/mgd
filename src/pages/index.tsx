@@ -2,6 +2,7 @@ import React from 'react';
 import Meta from '@/components/layout/Meta';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export default function Home(): JSX.Element {
   return (
@@ -17,4 +18,12 @@ export default function Home(): JSX.Element {
       <Footer />
     </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
 }

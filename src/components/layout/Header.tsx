@@ -1,15 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
-import { useIntl } from 'react-intl';
 import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 
-import Logo from '@/public/assets/img/beyond.png';
 import {
   MobileMenuProps,
   NavbarClass,
   NavbarLink,
 } from '@/types/boilerplate.types';
+
+import Logo from '@/public/assets/img/beyond.png';
 
 const ClassNames: NavbarClass = {
   desktop: 'text-black',
@@ -31,7 +32,7 @@ function MobileMenu({ isActive, children }: MobileMenuProps): JSX.Element {
 
 export default function Header(): JSX.Element {
   const Router = useRouter();
-  const { formatMessage: t } = useIntl();
+  const { t } = useTranslation();
   const [mobileMenu, setMobileMenu] = React.useState<boolean>(false);
 
   const HeaderLinks: NavbarLink[] = [
@@ -54,11 +55,11 @@ export default function Header(): JSX.Element {
               target="_blank"
               rel="noreferrer"
             >
-              {t({ id: name })}
+              {t(name)}
             </a>
           ) : (
             <Link className={className} href={url}>
-              {t({ id: name })}
+              {t(name)}
             </Link>
           )}
         </li>
@@ -79,11 +80,11 @@ export default function Header(): JSX.Element {
               target="_blank"
               rel="noreferrer"
             >
-              {t({ id: name })}
+              {t(name)}
             </a>
           ) : (
             <Link className={className} href={url}>
-              {t({ id: name })}
+              {t(name)}
             </Link>
           )}
         </li>

@@ -1,8 +1,8 @@
 import React from 'react';
 import type { AppProps } from 'next/app';
+import { appWithTranslation } from 'next-i18next';
 import PopupWrapper from '@/contexts/Popup.context';
 import AlertPopup from '@/components/popups/Alert.popup';
-import LanguageWrapper from '@/contexts/Language.context';
 import ConfirmPopup from '@/components/popups/Confirm.popup';
 
 // ? Global styles
@@ -24,7 +24,7 @@ import '@/styles/globals.css';
 //   fallback: ['ui-sans-serif'],
 // });
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <>
       {/* 
@@ -48,13 +48,13 @@ export default function App({ Component, pageProps }: AppProps) {
       //     `}
       //  </Script> 
       */}
-      <LanguageWrapper>
-        <PopupWrapper>
-          <AlertPopup />
-          <ConfirmPopup />
-          <Component {...pageProps} />
-        </PopupWrapper>
-      </LanguageWrapper>
+      <PopupWrapper>
+        <AlertPopup />
+        <ConfirmPopup />
+        <Component {...pageProps} />
+      </PopupWrapper>
     </>
   );
 }
+
+export default appWithTranslation(App);
