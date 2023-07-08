@@ -7,7 +7,7 @@ module.exports = {
         theme: '1100px',
       },
       fontFamily: {
-        theme: 'Inter',
+        theme: 'Montserrat, sans-serif',
       },
     },
   },

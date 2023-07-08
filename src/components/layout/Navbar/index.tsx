@@ -11,6 +11,7 @@ import {
 } from '@/types/boilerplate.types';
 
 import Logo from '@/public/assets/img/beyond.png';
+import ContactBar from './ContactBar';
 
 const ClassNames: NavbarClass = {
   desktop: 'text-black',
@@ -21,7 +22,7 @@ function MobileMenu({ isActive, children }: MobileMenuProps): JSX.Element {
   return (
     <div
       className={`${isActive ? 'translate-x-0' : 'translate-x-full'}
-        fixed left-0 top-0 z-[49] flex h-full w-full flex-col items-center justify-start bg-zinc-500 px-5 transition-all duration-500 lg:hidden`}
+        fixed left-0 top-0 z-[49] flex h-full w-full flex-col items-center justify-start bg-black px-5 transition-all duration-500 lg:hidden`}
     >
       <ul className="flex h-full w-full flex-col items-center justify-center gap-10 overflow-y-auto py-[150px]">
         {children}
@@ -30,12 +31,12 @@ function MobileMenu({ isActive, children }: MobileMenuProps): JSX.Element {
   );
 }
 
-export default function Header(): JSX.Element {
+export default function Navbar(): JSX.Element {
   const Router = useRouter();
   const { t } = useTranslation();
   const [mobileMenu, setMobileMenu] = React.useState<boolean>(false);
 
-  const HeaderLinks: NavbarLink[] = [
+  const NavbarLinks: NavbarLink[] = [
     {
       id: 0,
       name: 'header.home',
@@ -45,7 +46,7 @@ export default function Header(): JSX.Element {
   ];
 
   const getDesktopElements = (): JSX.Element[] => {
-    const elements = HeaderLinks.map(
+    const elements = NavbarLinks.map(
       ({ url, name, id, classNames: { desktop: className }, external }) => (
         <li key={`d-elm-${id}`}>
           {external ? (
@@ -70,7 +71,7 @@ export default function Header(): JSX.Element {
   };
 
   const getMobileElements = (): JSX.Element[] => {
-    const elements = HeaderLinks.map(
+    const elements = NavbarLinks.map(
       ({ url, name, id, classNames: { mobile: className }, external }) => (
         <li key={`m-elm-${id}`}>
           {external ? (
@@ -109,7 +110,8 @@ export default function Header(): JSX.Element {
   }, [Router]);
 
   return (
-    <header className="fixed left-0 top-0 z-[10] flex min-h-[100px] w-full items-center justify-center bg-zinc-300 font-theme">
+    <header className="relative left-0 top-0 z-[10] flex min-h-[100px] w-full flex-col items-center justify-center bg-zinc-300 font-theme lg:sticky">
+      <ContactBar />
       <section className="flex w-full max-w-theme flex-wrap items-center justify-between gap-5 p-5">
         <Link href="/" className="relative z-[50]">
           <img

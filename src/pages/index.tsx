@@ -1,6 +1,6 @@
 import React from 'react';
 import Meta from '@/components/layout/Meta';
-import Header from '@/components/layout/Header';
+import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
@@ -11,8 +11,8 @@ export default function Home(): JSX.Element {
         title="Murat Geri Dönüşüm"
         description="Milli Servette Geri Dönüşüm | Murat Geri Dönüşüm"
       />
-      <Header />
-      <main className="flex min-h-screen items-center justify-center pt-[150px]">
+      <Navbar />
+      <main className="flex min-h-screen items-center justify-center">
         Hello world.
       </main>
       <Footer />
