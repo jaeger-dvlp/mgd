@@ -4,6 +4,7 @@ import Slider from '@/components/home/Slider';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Products from '@/components/home/Products';
 
 export default function Home(): JSX.Element {
   return (
@@ -15,6 +16,7 @@ export default function Home(): JSX.Element {
       <Navbar />
       <main className="flex min-h-screen flex-wrap items-start justify-center font-theme">
         <Slider />
+        <Products />
       </main>
       <Footer />
     </>
