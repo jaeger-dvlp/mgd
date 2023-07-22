@@ -58,6 +58,7 @@
     },
     "products": {
       "title": "Ürünlerimiz",
+      "see-catalog": "Kataloğu Gör",
       "elements": [
         {
           "name": "Saf Alüminyum",
@@ -70,6 +71,10 @@
         {
           "name": "Alaşımlı Alüminyum",
           "description": "Murat Metal Alaşımlı Alüminyum ve alüminyum külçe çeşitlerini üretim ve satışını yapan firmamız 30 senedir sektöre hizmet vermektedir. Aluminyum külçe, alüminyum külçe, alüminyum alaşım."
+        },
+        {
+          "name": "Hammadeler",
+          "description": "Murat Metal Hammadeler ve alüminyum külçe çeşitlerini üretim ve satışını yapan firmamız 30 senedir sektöre hizmet vermektedir. Aluminyum külçe, alüminyum külçe, alüminyum alaşım."
         }
       ]
     }
@@ -95,5 +100,20 @@
     },
     "text-0": "Alaşımlı ve Saf Alüminyum Külçe \nÜretim ve Satış Hizmetleri",
     "text-1": "Firmamız aşağıda bulunan tablodaki tüm alüminyum külçelerin üretim ve satışını yapmaktadır."
+  },
+  "page-aluminum-scrap-purchase": {
+    "meta": {
+      "title": "Alüminyum Hurda Alımı",
+      "description": ""
+    },
+    "text-0": "Alüminyum Hurda Alımı",
+    "text-1": "Aluminyum geri dönüşümü yapan firmamız bu kapsam altında tüm aluminyum hurdalarını almaktadır.Hassas bir çevre bilincine sahip olan firmamız bu sayede kaynakların tekrar kazanılmasını sağlayarak ülke ekonomisine katkıda bulunmaktadır.\n\nBu katkıyı yaparken firmamız bunu hassas bir çevre koruma bilinciyle yapmaktadır."
+  },
+  "page-raw-materials": {
+    "meta": {
+      "title": "Hammadeler",
+      "description": ""
+    },
+    "text-0": "Hammadeler"
   }
 }

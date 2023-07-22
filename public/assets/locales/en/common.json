@@ -59,6 +59,7 @@
     },
     "products": {
       "title": "Our Products",
+      "see-catalog": "See Catalog",
       "elements": [
         {
           "name": "Pure Aluminum",
@@ -71,6 +72,10 @@
         {
           "name": "Alloy Aluminum",
           "description": "Murat Metal Alloy Our company, which produces and sells aluminum and aluminum ingots, has been serving the industry for 30 years. Aluminum ingots, aluminum ingots, aluminum alloys."
+        },
+        {
+          "name": "Raw Materials",
+          "description": "Our company, which produces and sells Murat Metal Pure Aluminum alloy and aluminum ingots, has been serving the industry for 30 years. Aluminum ingots, aluminum ingots, aluminum alloys."
         }
       ]
     }
@@ -96,5 +101,20 @@
     },
     "text-0": "Alloyed and Pure Aluminum Ingot\nProduction and Sales Services",
     "text-1": "Our company produces and sells all aluminum ingots in the table below."
+  },
+  "page-aluminum-scrap-purchase": {
+    "meta": {
+      "title": "Aluminum Scrap Purchase",
+      "description": ""
+    },
+    "text-0": "Aluminum Scrap Purchase",
+    "text-1": "Our company, which recycles aluminum, receives all aluminum scraps under this scope. Our company, which has a sensitive environmental awareness, contributes to the country's economy by ensuring the recovery of resources in this way.\n\nWhile making this contribution, our company does this with a sensitive environmental protection awareness."
+  },
+  "page-raw-materials": {
+    "meta": {
+      "title": "Raw Materials",
+      "description": ""
+    },
+    "text-0": "Raw Materials"
   }
 }
