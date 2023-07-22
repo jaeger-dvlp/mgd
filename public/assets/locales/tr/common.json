@@ -57,6 +57,7 @@
       ]
     },
     "products": {
+      "title": "Ürünlerimiz",
       "elements": [
         {
           "name": "Saf Alüminyum",
@@ -65,6 +66,10 @@
         {
           "name": "Hurda Alüminyum",
           "description": "Hurda Aluminyum geri dönüşümü yapan firmamız bu kapsam altında tüm aluminyum hurdalarını almaktadır. Hassas Çevre bilinci ile Profesyonel yürütülmektedir."
+        },
+        {
+          "name": "Alaşımlı Alüminyum",
+          "description": "Murat Metal Alaşımlı Alüminyum ve alüminyum külçe çeşitlerini üretim ve satışını yapan firmamız 30 senedir sektöre hizmet vermektedir. Aluminyum külçe, alüminyum külçe, alüminyum alaşım."
         }
       ]
     }

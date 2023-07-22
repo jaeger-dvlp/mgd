@@ -58,6 +58,7 @@
       ]
     },
     "products": {
+      "title": "Our Products",
       "elements": [
         {
           "name": "Pure Aluminum",
@@ -66,6 +67,10 @@
         {
           "name": "Scrap Aluminum",
           "description": "Our company, which recycles Scrap Aluminum, receives all aluminum scraps under this scope. It is carried out professionally with sensitive environmental awareness."
+        },
+        {
+          "name": "Alloy Aluminum",
+          "description": "Murat Metal Alloy Our company, which produces and sells aluminum and aluminum ingots, has been serving the industry for 30 years. Aluminum ingots, aluminum ingots, aluminum alloys."
         }
       ]
     }
