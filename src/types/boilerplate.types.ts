@@ -96,6 +96,14 @@ export interface IConfirmPopup {
 export interface IPopupContext {
   alertPopup: IAlertPopup | null;
   confirmPopup: IConfirmPopup | null;
+  imageViewer: {
+    inHTML: boolean;
+    isActive: boolean;
+    image: string;
+    maxWidth?: number | string;
+    maxHeight?: number | string;
+    aspectRatio?: string;
+  } | null;
   activateAlertPopup: (
     text: string,
     status: TPopupStatus,
@@ -106,7 +114,18 @@ export interface IPopupContext {
     onConfirm?: () => void,
     onCancel?: () => void
   ) => void;
-
+  activateImageViewer: ({
+    image,
+    maxWidth,
+    maxHeight,
+    aspectRatio,
+  }: {
+    image: string;
+    maxWidth?: number | string;
+    maxHeight?: number | string;
+    aspectRatio?: string;
+  }) => void;
   deactivateAlertPopup: () => void;
   deactivateConfirmPopup: () => void;
+  deactivateImageViewer: () => void;
 }
