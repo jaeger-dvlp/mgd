@@ -115,5 +115,14 @@
       "description": ""
     },
     "text-0": "Hammadeler"
+  },
+  "page-404": {
+    "meta": {
+      "title": "404",
+      "description": ""
+    },
+    "text-0": "404",
+    "text-1": "Aradığınız sayfa bulunamadı.",
+    "text-2": "Anasayfa"
   }
 }
