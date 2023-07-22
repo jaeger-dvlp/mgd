@@ -59,7 +59,7 @@
 .slide-text-anim {
   opacity: 0;
   visibility: hidden;
-  transition-delay: 1.5s !important;
+  transition-delay: 1s;
   transform: translateY(-20px);
   transition: all 0.3s ease-in-out;
 }
