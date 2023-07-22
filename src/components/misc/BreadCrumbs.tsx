@@ -1,9 +1,9 @@
 import React from 'react';
+import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
+import { BsChevronRight } from 'react-icons/bs';
 
 import IngotIMG from '@/public/assets/img/ingot-ai-1.webp';
-import Link from 'next/link';
-import { BsChevronRight } from 'react-icons/bs';
-import { useTranslation } from 'next-i18next';
 
 type Props = {
   paths: {

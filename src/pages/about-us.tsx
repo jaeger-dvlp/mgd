@@ -1,8 +1,7 @@
 import React from 'react';
-import { useTranslation } from 'next-i18next';
 import Meta from '@/components/layout/Meta';
+import { useTranslation } from 'next-i18next';
 import Navbar from '@/components/layout/Navbar';
-
 import Footer from '@/components/layout/Footer';
 import BreadCrumbs from '@/components/misc/BreadCrumbs';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
