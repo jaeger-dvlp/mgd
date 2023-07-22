@@ -1,48 +1,56 @@
 import React from 'react';
 import Link from 'next/link';
-import { BsInstagram } from 'react-icons/bs';
-import Logo from '@/public/assets/img/beyond.png';
-import { FooterSocialLink } from '@/types/boilerplate.types';
+import { useTranslation } from 'next-i18next';
+
+import LogoBlack from '@/public/assets/img/logo-black.png';
+import { BsEnvelopeFill, BsFillTelephoneFill } from 'react-icons/bs';
 
 function Footer(): JSX.Element {
-  const FooterSocialLinks: FooterSocialLink[] = [
-    {
-      id: 0,
-      name: 'Instagram',
-      url: 'https://www.instagram.com',
-      icon: BsInstagram,
-    },
-  ];
-
-  const getSocialLinks = (): JSX.Element[] => {
-    const elements = FooterSocialLinks.map(({ id, url, icon: Icon }) => (
-      <li key={`fs-elm-${id}`}>
-        <a href={url} target="_blank" rel="noreferrer">
-          <Icon className="h-4 w-4 text-black transition-all duration-150 hover:bg-white/30" />
-        </a>
-      </li>
-    ));
-
-    return elements;
-  };
-
+  const { t } = useTranslation();
   return (
-    <footer className="m-0 flex min-h-[100px] w-full flex-wrap items-center justify-center bg-zinc-300 p-0">
-      <section className="flex w-full max-w-theme flex-wrap items-center justify-between p-5">
-        <Link href="/" className="relative">
-          <img
-            alt="Logo"
-            src={Logo.src}
-            className="aspect-square w-10 bg-black object-contain p-1 opacity-80 transition-all duration-150"
-          />
-        </Link>
-        <nav className="flex items-center justify-center ">
-          <ul className="flex list-none flex-wrap items-center justify-center gap-3 lg:flex-nowrap xl:flex-nowrap">
-            {getSocialLinks()}
-          </ul>
-        </nav>
+    <>
+      <section className="flex w-full flex-wrap items-center justify-center border-t border-t-black/30 bg-white font-theme">
+        <section className="flex w-full max-w-2xl flex-col items-center justify-center p-5">
+          <p className="text-center text-sm text-zinc-700">
+            {t('footer.description')}
+          </p>
+          <section className="mt-5 flex w-full flex-wrap items-center justify-center gap-5">
+            <a
+              href="tel:+90 212 486 37 73"
+              className="flex items-center justify-center gap-2 border border-black/30 bg-white px-3 py-1 text-sm text-zinc-800 hover:bg-black hover:text-white"
+            >
+              <BsFillTelephoneFill className="h-4 w-4" />
+              <span>+90 212 486 37 73</span>
+            </a>
+
+            <Link
+              href="/iletisim"
+              className="flex items-center justify-center gap-2 border border-black/30 bg-white px-3 py-1 text-sm text-zinc-800 hover:bg-black hover:text-white"
+            >
+              <BsEnvelopeFill className="h-4 w-4" />
+              <span>{t('footer.contact-button')}</span>
+            </Link>
+          </section>
+        </section>
       </section>
-    </footer>
+      <footer className="m-0 flex min-h-[100px] w-full flex-wrap items-center justify-center bg-black p-0 font-theme">
+        <section className="flex w-full max-w-theme flex-col items-center justify-center p-5">
+          <Link href="/" className="relative">
+            <img
+              alt="Logo"
+              src={LogoBlack.src}
+              style={{
+                filter: 'invert(1)',
+              }}
+              className="w-full max-w-[300px] object-contain p-1 opacity-80 transition-all duration-150"
+            />
+          </Link>
+          <p className="mt-5 text-center text-xs text-zinc-400">
+            {t('footer.all-rights-reserved')}
+          </p>
+        </section>
+      </footer>
+    </>
   );
 }
 
