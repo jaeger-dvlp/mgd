@@ -3,6 +3,7 @@ import Meta from '@/components/layout/Meta';
 import { useTranslation } from 'next-i18next';
 import Footer from '@/components/layout/Footer';
 import Navbar from '@/components/layout/Navbar';
+import { usePopup } from '@/contexts/Popup.context';
 import BreadCrumbs from '@/components/misc/BreadCrumbs';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
@@ -63,6 +64,8 @@ const ItemImages: {
 
 function RawMaterials() {
   const { t } = useTranslation();
+  const { activateImageViewer } = usePopup();
+
   return (
     <>
       <Meta
@@ -109,7 +112,13 @@ function RawMaterials() {
                 <button
                   type="button"
                   key={item.id}
-                  onClick={() => null}
+                  onClick={() =>
+                    activateImageViewer({
+                      image: item.src,
+                      maxWidth: '100%',
+                      maxHeight: '100%',
+                    })
+                  }
                   className="flex aspect-square w-full max-w-[320px] items-center justify-center self-center shadow-lg shadow-black/30 transition-all duration-200 hover:scale-110 hover:shadow-black/50"
                 >
                   <img
