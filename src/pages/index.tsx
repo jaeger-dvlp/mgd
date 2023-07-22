@@ -3,8 +3,8 @@ import Meta from '@/components/layout/Meta';
 import Slider from '@/components/home/Slider';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Products from '@/components/home/Products';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export default function Home(): JSX.Element {
   return (

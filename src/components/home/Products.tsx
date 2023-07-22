@@ -1,9 +1,9 @@
 import React from 'react';
+import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 
 import ProductIMG1 from '@/public/assets/img/product-1.webp';
 import ProductIMG2 from '@/public/assets/img/product-2.webp';
-import Link from 'next/link';
 
 const AllProducts = [
   {
