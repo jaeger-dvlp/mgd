@@ -4,6 +4,7 @@ import { useTranslation } from 'next-i18next';
 
 import ProductIMG1 from '@/public/assets/img/product-1.webp';
 import ProductIMG2 from '@/public/assets/img/product-2.webp';
+import { BsBook } from 'react-icons/bs';
 
 const AllProducts = [
   {
@@ -14,18 +15,25 @@ const AllProducts = [
     url: '/our-products/pure-aluminum-innots',
   },
   {
-    id: 0,
+    id: 1,
     image: ProductIMG1.src,
     name: 'page-home.products.elements.2.name',
     description: 'page-home.products.elements.2.description',
     url: '/our-products/alloy-aluminum-innots',
   },
   {
-    id: 1,
+    id: 2,
     image: ProductIMG2.src,
     name: 'page-home.products.elements.1.name',
     description: 'page-home.products.elements.1.description',
     url: '/our-products/aluminum-scrap-purchase',
+  },
+  {
+    id: 3,
+    image: ProductIMG2.src,
+    name: 'page-home.products.elements.3.name',
+    description: 'page-home.products.elements.3.description',
+    url: '/our-products/raw-materials',
   },
 ];
 
@@ -78,6 +86,13 @@ function Products() {
             </li>
           ))}
         </ul>
+        <Link
+          href="/catalog"
+          className="flex w-fit items-center justify-center gap-2 border border-black bg-black px-5 py-2 text-lg font-medium text-white transition-all duration-150 hover:bg-white hover:text-black"
+        >
+          <BsBook className="h-5 w-5" />
+          <span>{t('page-home.products.see-catalog')}</span>
+        </Link>
       </section>
     </section>
   );
