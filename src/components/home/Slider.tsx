@@ -112,13 +112,13 @@ function Slider() {
               }}
               className="flex h-full w-full flex-wrap items-center justify-center"
             >
-              <div className="flex h-full w-full items-center justify-center bg-black/70 p-5">
-                <div className="slide-text-anim flex h-full w-full max-w-theme flex-wrap items-center justify-start p-5 ">
-                  <div className="max-w-3xl">
+              <section className="flex h-full w-full items-center justify-center bg-black/70 p-5">
+                <section className="slide-text-anim flex h-full w-full max-w-theme flex-wrap items-center justify-start p-5 ">
+                  <section className="max-w-3xl">
                     <SlideComponent t={t} />
-                  </div>
-                </div>
-              </div>
+                  </section>
+                </section>
+              </section>
             </SwiperSlide>
           );
         })}
