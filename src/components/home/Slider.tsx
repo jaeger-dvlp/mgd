@@ -14,11 +14,15 @@ const Slides = [
     image: IngotIMG.src,
     component: ({ t }: { t: TFunction }) => (
       <section className="flex w-full  flex-col items-start justify-start gap-5">
-        <p className="text-xl">{t('page-home.slider.slides.0.text-0')}</p>
-        <p className="text-4xl font-bold">
+        <p className="text-sm lg:text-xl">
+          {t('page-home.slider.slides.0.text-0')}
+        </p>
+        <p className="text-2xl font-bold lg:text-4xl">
           {t('page-home.slider.slides.0.text-1')}
         </p>
-        <p className="text-2xl">{t('page-home.slider.slides.0.text-2')}</p>
+        <p className="text-base lg:text-2xl">
+          {t('page-home.slider.slides.0.text-2')}
+        </p>
       </section>
     ),
   },
@@ -27,7 +31,9 @@ const Slides = [
     image: IngotIMG.src,
     component: ({ t }: { t: TFunction }) => (
       <section className="flex w-full  flex-col items-start justify-start gap-5">
-        <p>{t('page-home.slider.slides.1.text-0')}</p>
+        <p className="text-sm lg:text-xl">
+          {t('page-home.slider.slides.1.text-0')}
+        </p>
       </section>
     ),
   },
@@ -36,7 +42,9 @@ const Slides = [
     image: IngotIMG.src,
     component: ({ t }: { t: TFunction }) => (
       <section className="flex w-full  flex-col items-start justify-start gap-5">
-        <p>{t('page-home.slider.slides.2.text-0')}</p>
+        <p className="text-sm lg:text-xl">
+          {t('page-home.slider.slides.2.text-0')}
+        </p>
       </section>
     ),
   },
@@ -45,7 +53,9 @@ const Slides = [
     image: IngotIMG.src,
     component: ({ t }: { t: TFunction }) => (
       <section className="flex w-full  flex-col items-start justify-start gap-5">
-        <p>{t('page-home.slider.slides.3.text-0')}</p>
+        <p className="text-sm lg:text-xl">
+          {t('page-home.slider.slides.3.text-0')}
+        </p>
       </section>
     ),
   },
@@ -54,7 +64,9 @@ const Slides = [
     image: IngotIMG.src,
     component: ({ t }: { t: TFunction }) => (
       <section className="flex w-full  flex-col items-start justify-start gap-5">
-        <p>{t('page-home.slider.slides.4.text-0')}</p>
+        <p className="text-sm lg:text-xl">
+          {t('page-home.slider.slides.4.text-0')}
+        </p>
       </section>
     ),
   },
