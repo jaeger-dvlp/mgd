@@ -100,7 +100,7 @@ function Slider() {
         }}
         className="h-full w-full"
       >
-        {Slides.map((slide) => {
+        {Slides.map((slide, index) => {
           const SlideComponent = slide.component;
           return (
             <SwiperSlide
@@ -113,7 +113,12 @@ function Slider() {
               className="flex h-full w-full flex-wrap items-center justify-center"
             >
               <section className="flex h-full w-full items-center justify-center bg-black/70 p-5">
-                <section className="slide-text-anim flex h-full w-full max-w-theme flex-wrap items-center justify-start p-5 ">
+                <section
+                  style={{
+                    transitionDelay: index === 0 ? '0s' : '1s',
+                  }}
+                  className="slide-text-anim flex h-full w-full max-w-theme flex-wrap items-center justify-start p-5 "
+                >
                   <section className="max-w-3xl">
                     <SlideComponent t={t} />
                   </section>
