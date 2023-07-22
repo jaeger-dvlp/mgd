@@ -3,6 +3,9 @@
     "default": "Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin.",
     "userNotFound": "Kullanıcı bulunamadı."
   },
+  "buttons": {
+    "see-more": "Detaylı Gör"
+  },
   "navbar": {
     "home": "ANASAYfA",
     "our-products": {
@@ -40,6 +43,18 @@
         },
         {
           "text-0": "Milli Servette Geri Dönüşüm"
+        }
+      ]
+    },
+    "products": {
+      "elements": [
+        {
+          "name": "Saf Alüminyum",
+          "description": "Murat Metal Saf Alüminyum alaşımlı ve alüminyum külçe çeşitlerini üretim ve satışını yapan firmamız 30 senedir sektöre hizmet vermektedir. Aluminyum külçe, alüminyum külçe, alüminyum alaşım."
+        },
+        {
+          "name": "Hurda Alüminyum",
+          "description": "Hurda Aluminyum geri dönüşümü yapan firmamız bu kapsam altında tüm aluminyum hurdalarını almaktadır. Hassas Çevre bilinci ile Profesyonel yürütülmektedir."
         }
       ]
     }

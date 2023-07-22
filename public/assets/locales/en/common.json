@@ -3,6 +3,9 @@
     "default": "Something went wrong. Please try again later.",
     "userNotFound": "User not found."
   },
+  "buttons": {
+    "see-more": "See More"
+  },
   "navbar": {
     "home": "HOME",
     "our-products": {
@@ -40,6 +43,18 @@
         },
         {
           "text-0": "Recycling in National Wealth"
+        }
+      ]
+    },
+    "products": {
+      "elements": [
+        {
+          "name": "Pure Aluminum",
+          "description": "Our company, which produces and sells Murat Metal Pure Aluminum alloy and aluminum ingots, has been serving the industry for 30 years. Aluminum ingots, aluminum ingots, aluminum alloys."
+        },
+        {
+          "name": "Scrap Aluminum",
+          "description": "Our company, which recycles Scrap Aluminum, receives all aluminum scraps under this scope. It is carried out professionally with sensitive environmental awareness."
         }
       ]
     }
