@@ -31,6 +31,10 @@
     "quote": "Ücretsiz Telif İste"
   },
   "page-home": {
+    "meta": {
+      "title": "Anasayfa",
+      "description": ""
+    },
     "slider": {
       "slides": [
         {
@@ -63,6 +67,12 @@
           "description": "Hurda Aluminyum geri dönüşümü yapan firmamız bu kapsam altında tüm aluminyum hurdalarını almaktadır. Hassas Çevre bilinci ile Profesyonel yürütülmektedir."
         }
       ]
+    }
+  },
+  "page-about-us": {
+    "meta": {
+      "title": "Hakkımızda",
+      "description": ""
     }
   }
 }

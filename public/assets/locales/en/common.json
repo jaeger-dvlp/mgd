@@ -32,6 +32,10 @@
     "quote": "Request a Quote"
   },
   "page-home": {
+    "meta": {
+      "title": "Home",
+      "description": ""
+    },
     "slider": {
       "slides": [
         {
@@ -64,6 +68,12 @@
           "description": "Our company, which recycles Scrap Aluminum, receives all aluminum scraps under this scope. It is carried out professionally with sensitive environmental awareness."
         }
       ]
+    }
+  },
+  "page-about-us": {
+    "meta": {
+      "title": "About Us",
+      "description": ""
     }
   }
 }
