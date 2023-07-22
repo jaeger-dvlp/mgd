@@ -28,7 +28,7 @@
     "description": "Saf Alüminyum Külçe, Alüminyum Hurda vb. Alüminyum Hizmetleri için bize ulaşın.",
     "contact-button": "İletişim",
     "all-rights-reserved": "2023 Murat Geri Dönüşüm © Tüm hakları saklıdır.",
-    "quote": "Ücretsiz Telif İste"
+    "quote": "Ücretsiz Teklif İste"
   },
   "page-home": {
     "meta": {
@@ -82,5 +82,13 @@
     },
     "text-0": "Alaşımlı ve Saf Alüminyum Külçe \nÜretim ve Satış Hizmetleri",
     "text-1": "Türkiye ve Dünya standartlarındaki tüm alüminyum alaşımlarını yapan firmamız, bununla birlikte istenilen özel alaşımları da yapmaktadır."
+  },
+  "page-pure-aluminum-innots": {
+    "meta": {
+      "title": "Saf Alüminyum Külçe",
+      "description": ""
+    },
+    "text-0": "Alaşımlı ve Saf Alüminyum Külçe \nÜretim ve Satış Hizmetleri",
+    "text-1": "Firmamız aşağıda bulunan tablodaki tüm alüminyum külçelerin üretim ve satışını yapmaktadır."
   }
 }
