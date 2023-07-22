@@ -2,6 +2,7 @@ import React from 'react';
 import type { AppProps } from 'next/app';
 import { appWithTranslation } from 'next-i18next';
 import PopupWrapper from '@/contexts/Popup.context';
+import ImageViewer from '@/components/misc/ImageViewer';
 import AlertPopup from '@/components/popups/Alert.popup';
 import ConfirmPopup from '@/components/popups/Confirm.popup';
 
@@ -49,6 +50,7 @@ function App({ Component, pageProps }: AppProps) {
       //  </Script> 
       */}
       <PopupWrapper>
+        <ImageViewer />
         <AlertPopup />
         <ConfirmPopup />
         <Component {...pageProps} />
