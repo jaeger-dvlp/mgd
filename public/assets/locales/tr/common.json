@@ -20,5 +20,28 @@
     "our-documents": "BELGELERİMİZ",
     "about-us": "HAKKIMIZDA",
     "contact-us": "İLETİŞİM"
+  },
+  "page-home": {
+    "slider": {
+      "slides": [
+        {
+          "text-0": "Geri dönüşüm, geleceğe ve ekonomiye yatırım yapmak demektir.",
+          "text-1": "Ne yaptığımızın farkındayız.",
+          "text-2": "İşi seven herkes, çevrelerine değer katıyor."
+        },
+        {
+          "text-0": "Murat Geri Dönüşüm"
+        },
+        {
+          "text-0": "Alüminyum Cüruf"
+        },
+        {
+          "text-0": "Hurda Talaş"
+        },
+        {
+          "text-0": "Milli Servette Geri Dönüşüm"
+        }
+      ]
+    }
   }
 }

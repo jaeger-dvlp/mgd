@@ -20,5 +20,28 @@
     "our-documents": "OUR DOCUMENTS",
     "about-us": "ABOUT US",
     "contact-us": "CONTACT"
+  },
+  "page-home": {
+    "slider": {
+      "slides": [
+        {
+          "text-0": "Recycling means investing in the future and economy.",
+          "text-1": "We are aware of what we are doing.",
+          "text-2": "Everyone who loves work adds value to their environment."
+        },
+        {
+          "text-0": "Murat Recycling"
+        },
+        {
+          "text-0": "Aluminum Slag"
+        },
+        {
+          "text-0": "Scrap Sawdust"
+        },
+        {
+          "text-0": "Recycling in National Wealth"
+        }
+      ]
+    }
   }
 }
