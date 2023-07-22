@@ -8,6 +8,7 @@ import ConfirmPopup from '@/components/popups/Confirm.popup';
 
 // ? Global styles
 import '@/styles/globals.css';
+import Loader from '@/components/layout/Loader';
 
 // * Local font implementation with @next/font/local - #1
 //
@@ -50,6 +51,7 @@ function App({ Component, pageProps }: AppProps) {
       //  </Script> 
       */}
       <PopupWrapper>
+        <Loader />
         <ImageViewer />
         <AlertPopup />
         <ConfirmPopup />
