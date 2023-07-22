@@ -32,7 +32,7 @@ function BreadCrumbs({ paths }: Props) {
       }}
       className="m-0 grid h-fit min-h-[200px] w-full grid-cols-1 place-content-stretch place-items-stretch p-0"
     >
-      <section className="grid min-h-full w-full grid-cols-1 place-content-center place-items-center bg-black/75">
+      <section className="grid w-full grid-cols-1 place-content-center place-items-center bg-black/75">
         <section className="flex w-full max-w-theme flex-col items-start justify-center gap-5 px-5 py-10">
           <p className="breadcrumb text-2xl font-bold text-white">
             {getPathName(paths[paths.length - 1].name)}
