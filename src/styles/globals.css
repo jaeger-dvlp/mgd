@@ -6,6 +6,25 @@
   scroll-behavior: smooth !important;
 }
 
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
 .default-zoom-in {
   opacity: 0;
   transform: scale(0.9);
@@ -40,7 +59,7 @@
 .slide-text-anim {
   opacity: 0;
   visibility: hidden;
-  transition-delay: 2s !important;
+  transition-delay: 1.5s !important;
   transform: translateY(-20px);
   transition: all 0.3s ease-in-out;
 }
