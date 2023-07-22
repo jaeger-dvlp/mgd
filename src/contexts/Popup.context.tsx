@@ -11,10 +11,13 @@ import {
 const PopupContext = React.createContext<IPopupContext>({
   alertPopup: null,
   confirmPopup: null,
+  imageViewer: null,
   activateAlertPopup: () => {},
   deactivateAlertPopup: () => {},
   activateConfirmPopup: () => {},
   deactivateConfirmPopup: () => {},
+  activateImageViewer: () => {},
+  deactivateImageViewer: () => {},
 });
 
 export default function PopupWrapper({
@@ -37,6 +40,71 @@ export default function PopupWrapper({
     onConfirm: () => {},
     onCancel: () => {},
   });
+
+  const [imageViewer, setImageViewer] = React.useState<{
+    inHTML: boolean;
+    isActive: boolean;
+    image: string;
+    maxWidth?: number | string;
+    maxHeight?: number | string;
+    aspectRatio?: string;
+  }>({
+    inHTML: false,
+    isActive: false,
+    image: '',
+    maxWidth: undefined,
+    maxHeight: undefined,
+    aspectRatio: undefined,
+  });
+
+  const activateImageViewer = React.useCallback(
+    async ({
+      image,
+      maxWidth,
+      maxHeight,
+      aspectRatio,
+    }: {
+      image: string;
+      maxWidth?: number | string;
+      maxHeight?: number | string;
+      aspectRatio?: string;
+    }) => {
+      setImageViewer({
+        inHTML: true,
+        isActive: false,
+        image,
+        maxWidth,
+        maxHeight,
+        aspectRatio,
+      });
+      await Wait(50);
+      setImageViewer({
+        inHTML: true,
+        isActive: true,
+        image,
+        maxWidth,
+        maxHeight,
+        aspectRatio,
+      });
+    },
+    [imageViewer]
+  );
+
+  const deactivateImageViewer = React.useCallback(async () => {
+    setImageViewer((prev) => ({
+      ...prev,
+      isActive: false,
+    }));
+
+    await Wait(250);
+    setImageViewer({
+      inHTML: false,
+      isActive: false,
+      image: '',
+      maxWidth: 0,
+      aspectRatio: '1:1',
+    });
+  }, [imageViewer]);
 
   const deactivateAlertPopup = React.useCallback(async () => {
     setAlertPopup((prev) => ({
@@ -117,12 +185,15 @@ export default function PopupWrapper({
     () => ({
       alertPopup,
       confirmPopup,
+      imageViewer,
       activateAlertPopup,
       deactivateAlertPopup,
       activateConfirmPopup,
       deactivateConfirmPopup,
+      activateImageViewer,
+      deactivateImageViewer,
     }),
-    [alertPopup, confirmPopup]
+    [alertPopup, confirmPopup, imageViewer]
   );
 
   React.useEffect(() => {
