@@ -1,5 +1,6 @@
 import React from 'react';
 import type { AppProps } from 'next/app';
+import Loader from '@/components/layout/Loader';
 import { appWithTranslation } from 'next-i18next';
 import PopupWrapper from '@/contexts/Popup.context';
 import ImageViewer from '@/components/misc/ImageViewer';
@@ -8,7 +9,6 @@ import ConfirmPopup from '@/components/popups/Confirm.popup';
 
 // ? Global styles
 import '@/styles/globals.css';
-import Loader from '@/components/layout/Loader';
 
 // * Local font implementation with @next/font/local - #1
 //
