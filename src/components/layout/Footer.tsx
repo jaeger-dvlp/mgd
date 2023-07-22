@@ -15,14 +15,6 @@ function Footer(): JSX.Element {
             {t('footer.description')}
           </p>
           <section className="mt-5 flex w-full flex-wrap items-center justify-center gap-5">
-            <a
-              href="tel:+90 212 486 37 73"
-              className="flex items-center justify-center gap-2 border border-black/30 bg-white px-3 py-1 text-sm text-zinc-800 hover:bg-black hover:text-white"
-            >
-              <BsFillTelephoneFill className="h-4 w-4" />
-              <span>+90 212 486 37 73</span>
-            </a>
-
             <Link
               href="/iletisim"
               className="flex items-center justify-center gap-2 border border-black/30 bg-white px-3 py-1 text-sm text-zinc-800 hover:bg-black hover:text-white"
@@ -30,6 +22,13 @@ function Footer(): JSX.Element {
               <BsEnvelopeFill className="h-4 w-4" />
               <span>{t('footer.contact-button')}</span>
             </Link>
+            <a
+              href="tel:+90 212 486 37 73"
+              className="flex items-center justify-center gap-2 border border-black/30 bg-white px-3 py-1 text-sm text-zinc-800 hover:bg-black hover:text-white"
+            >
+              <BsFillTelephoneFill className="h-4 w-4" />
+              <span>+90 212 486 37 73</span>
+            </a>
           </section>
         </section>
       </section>
