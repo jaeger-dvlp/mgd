@@ -24,6 +24,11 @@
     "about-us": "HAKKIMIZDA",
     "contact-us": "İLETİŞİM"
   },
+  "footer": {
+    "description": "Saf Alüminyum Külçe, Alüminyum Hurda vb. Alüminyum Hizmetleri için bize ulaşın.",
+    "contact-button": "İletişim",
+    "all-rights-reserved": "2023 Murat Geri Dönüşüm © Tüm hakları saklıdır."
+  },
   "page-home": {
     "slider": {
       "slides": [

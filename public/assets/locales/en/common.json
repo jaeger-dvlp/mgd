@@ -4,7 +4,8 @@
     "userNotFound": "User not found."
   },
   "buttons": {
-    "see-more": "See More"
+    "see-more": "See More",
+    "contact": "Contact Us"
   },
   "navbar": {
     "home": "HOME",
@@ -24,6 +25,11 @@
     "about-us": "ABOUT US",
     "contact-us": "CONTACT"
   },
+  "footer": {
+    "description": "Contact us for Pure Aluminum Ingot, Aluminum Scrap etc. Aluminum Services.",
+    "contact-button": "Contact",
+    "all-rights-reserved": "2023 Murat Geri Dönüşüm © All rights reserved."
+  },
   "page-home": {
     "slider": {
       "slides": [
@@ -33,7 +39,7 @@
           "text-2": "Everyone who loves work adds value to their environment."
         },
         {
-          "text-0": "Murat Recycling"
+          "text-0": "Murat Geri Dönüşüm"
         },
         {
           "text-0": "Aluminum Slag"
