@@ -28,7 +28,7 @@ function Meta({ title, description, favIconType }: MetaProps): JSX.Element {
         />
       </Head>
       <NextSeo
-        title={title}
+        title={`${title} | Murat Geri Dönüşüm`}
         description={description}
         openGraph={{
           title,

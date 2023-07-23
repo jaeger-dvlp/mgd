@@ -89,8 +89,8 @@ function OurDocuments() {
   return (
     <>
       <Meta
-        title={t('page-aluminum-scrap-purchase.meta.title')}
-        description={t('page-aluminum-scrap-purchase.meta.description')}
+        title={t('page-our-documents.meta.title')}
+        description={t('page-our-documents.meta.description')}
       />
       <Navbar />
       <main className="flex w-full flex-wrap items-start justify-center font-theme">

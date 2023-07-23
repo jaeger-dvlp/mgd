@@ -65,8 +65,8 @@ export default function Mcook(): JSX.Element {
   return (
     <>
       <Meta
-        title="Murat Geri Dönüşüm"
-        description="Milli Servette Geri Dönüşüm | Murat Geri Dönüşüm"
+        title={t('page-mcook.meta.title')}
+        description={t('page-mcook.meta.description')}
       />
       <Navbar />
       <main className="flex min-h-screen flex-col items-center justify-center font-theme">

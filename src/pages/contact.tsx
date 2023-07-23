@@ -129,8 +129,8 @@ export default function Contact(): JSX.Element {
   return (
     <>
       <Meta
-        title="Murat Geri Dönüşüm"
-        description="Milli Servette Geri Dönüşüm | Murat Geri Dönüşüm"
+        title={t('page-contact.meta.title')}
+        description={t('page-contact.meta.description')}
       />
       <Navbar />
       <main className="flex min-h-screen flex-col items-center justify-start font-theme">

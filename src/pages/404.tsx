@@ -10,10 +10,7 @@ export default function NotFound(): JSX.Element {
   const { t } = useTranslation();
   return (
     <>
-      <Meta
-        title="Murat Geri Dönüşüm"
-        description="Milli Servette Geri Dönüşüm | Murat Geri Dönüşüm"
-      />
+      <Meta title="404" description="Murat Geri Dönüşüm 404 Sayfası" />
       <Navbar />
       <main className="flex min-h-screen flex-col items-center justify-center gap-5 font-theme">
         <h1 className="whitespace-pre-wrap text-center text-4xl font-medium text-zinc-600">
