@@ -117,6 +117,19 @@
     },
     "text-0": "Raw Materials"
   },
+  "page-our-documents": {
+    "meta": {
+      "title": "Our Documents",
+      "description": ""
+    }
+  },
+  "page-mcook": {
+    "meta": {
+      "title": "Mcook",
+      "description": ""
+    },
+    "text-0": "MCOOK User Manual"
+  },
   "page-404": {
     "meta": {
       "title": "404",

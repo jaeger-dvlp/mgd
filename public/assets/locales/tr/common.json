@@ -116,6 +116,19 @@
     },
     "text-0": "Hammadeler"
   },
+  "page-our-documents": {
+    "meta": {
+      "title": "Belgelerimiz",
+      "description": ""
+    }
+  },
+  "page-mcook": {
+    "meta": {
+      "title": "Mcook",
+      "description": ""
+    },
+    "text-0": "MCOOK Kullanım Kılavuzu"
+  },
   "page-404": {
     "meta": {
       "title": "404",
