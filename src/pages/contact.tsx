@@ -245,6 +245,14 @@ export default function Contact(): JSX.Element {
             <section className="flex w-full flex-col items-start justify-start lg:w-1/2 lg:pl-5">
               {language === 'tr' ? <ContactDetailsTR /> : <ContactDetailsEN />}
             </section>
+            <section className="flex w-full items-center justify-center border border-black p-0 lg:mt-10">
+              <iframe
+                title="Murat Geri Dönüşüm"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.902751148715!2d28.801025649360966!3d41.0711183415954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa58516a94d53%3A0x23d074f6ccab6c71!2s%C4%B0kitelli+Sanayi!5e0!3m2!1str!2str!4v1507051730525"
+                width="100%"
+                height="450"
+              />
+            </section>
           </section>
         </section>
       </main>
