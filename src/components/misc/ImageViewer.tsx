@@ -16,13 +16,12 @@ function ImageViewer() {
                 ? 'visible opacity-100'
                 : 'invisible opacity-0'
             }
-          fixed left-0 top-0 z-[99999] flex h-full w-full items-center justify-center bg-black/70 p-5 transition-all duration-200`}
+          fixed left-0 top-0 z-[99999] flex h-full w-full items-center justify-center bg-black/70 p-10 transition-all duration-200`}
     >
       <img
         role="button"
         onClick={(e) => e.stopPropagation()}
         style={{
-          width: '100%',
           objectFit: 'contain',
           maxWidth: imageViewer?.maxWidth || '100%',
           maxHeight: imageViewer?.maxHeight || '100%',

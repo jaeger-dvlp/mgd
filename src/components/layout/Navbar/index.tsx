@@ -86,8 +86,9 @@ export default function Navbar(): JSX.Element {
         {
           id: 4,
           name: 'navbar.our-products.sub.catalog',
-          url: '/catalog',
+          url: '/assets/pdf/katalog.pdf',
           classNames: SubClassNames,
+          external: true,
         },
       ],
       classNames: ClassNames,
@@ -95,8 +96,9 @@ export default function Navbar(): JSX.Element {
     {
       id: 2,
       name: 'navbar.catalog',
-      url: '/catalog',
+      url: '/assets/pdf/katalog.pdf',
       classNames: ClassNames,
+      external: true,
     },
     {
       id: 3,

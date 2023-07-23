@@ -86,13 +86,14 @@ function Products() {
             </li>
           ))}
         </ul>
-        <Link
-          href="/catalog"
+        <a
+          target="_blank"
+          href="/assets/pdf/katalog.pdf"
           className="flex w-fit items-center justify-center gap-2 border border-black bg-black px-5 py-2 text-lg font-medium text-white transition-all duration-150 hover:bg-white hover:text-black"
         >
           <BsBook className="h-5 w-5" />
           <span>{t('page-home.products.see-catalog')}</span>
-        </Link>
+        </a>
       </section>
     </section>
   );
