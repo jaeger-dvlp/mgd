@@ -121,7 +121,7 @@ export default function Navbar(): JSX.Element {
     {
       id: 6,
       name: 'navbar.contact-us',
-      url: '/contact-us',
+      url: '/contact',
       classNames: ClassNames,
     },
     {
