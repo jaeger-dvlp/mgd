@@ -129,6 +129,25 @@
     },
     "text-0": "MCOOK Kullanım Kılavuzu"
   },
+  "page-contact": {
+    "meta": {
+      "title": "İletişim",
+      "description": ""
+    },
+    "text-0": "7/24 destek, genel soruşturmalarımız için;",
+    "text-1": "Lütfen iletişim formu bilgilerinizi doldurun.\nEn kısa sürede geri dönüş yapılıcaktır.",
+    "form": {
+      "errors": {
+        "required": "Bu alan zorunludur.",
+        "email-invalid": "Geçersiz email adresi."
+      },
+      "full-name": "Ad Soyad",
+      "email": "E-Posta",
+      "subject": "Konu",
+      "message": "Mesaj",
+      "submit": "Gönder"
+    }
+  },
   "page-404": {
     "meta": {
       "title": "404",
